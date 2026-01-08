@@ -1,8 +1,6 @@
 # Planora - Task Management Application
 
-<div align="center">
-  <p>Ứng dụng quản lý công việc (Task Management) hiện đại, giúp cá nhân và nhóm theo dõi, tổ chức và hoàn thành công việc hiệu quả hơn.</p>
-</div>
+Ứng dụng quản lý công việc (Task Management) hiện đại, giúp cá nhân và nhóm theo dõi, tổ chức và hoàn thành công việc hiệu quả hơn.
 
 ---
 
@@ -52,7 +50,7 @@ Planora được thiết kế với giao diện người dùng thân thiện, re
 
 - 🎨 **Giao diện hiện đại** với MUI
 - 📱 **Responsive Design** hoạt động mượt mà trên mọi thiết bị
-- 🌓 **Dark/Light Mode** (nếu được tích hợp)
+- 🌓 **Dark/Light Mode**
 - ⚡ **Performance tối ưu** với Vite và React
 
 ### Tìm kiếm và Lọc
@@ -155,16 +153,16 @@ npm run preview
 ```
 Planora-FE/
 ├── src/
+│   ├── app/             # Provier, router
 │   ├── assets/          # Static assets (images, fonts, etc.)
 │   ├── components/      # Reusable React components
-│   │   ├── common/      # Common components (Button, Input, Modal, etc.)
-│   │   ├── layout/      # Layout components (Header, Sidebar, Footer)
-│   │   └── task/        # Task-specific components
-│   ├── pages/           # Page components/views
-│   ├── hooks/           # Custom React hooks
+│   │   ├── common/      # Theme components
+│   │   ├── layout/      # Main Layout components
+│   ├── design-system/   # Custom UI from MUI
+│   ├── fetures/         # Page components/views
+│   ├── lib/             # Custom library
 │   ├── services/        # API services và business logic
-│   ├── store/           # State management (Zustand/Context)
-│   ├── types/           # TypeScript type definitions
+│   ├── stores/          # State management (Zustand/Context)
 │   ├── utils/           # Utility functions
 │   ├── styles/          # Global styles
 │   ├── App.tsx          # Main App component
@@ -191,18 +189,6 @@ Planora-FE/
 | `npm run lint:fix`   | Tự động fix các lỗi ESLint có thể sửa  |
 | `npm run format`     | Format code với Prettier               |
 | `npm run type-check` | Kiểm tra TypeScript types              |
-
----
-
-## 📝 License
-
-Dự án này được phân phối dưới MIT License. Xem file `LICENSE` để biết thêm chi tiết.
-
----
-
-## 👥 Tác giả
-
-**n-royy** - [GitHub Profile](https://github.com/n-royy)
 
 ---
 
